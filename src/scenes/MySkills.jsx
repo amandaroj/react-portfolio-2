@@ -87,7 +87,9 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="font-playfair font-semibold text-4xl mb-5">My Skills</p>
+          <p className="font-YesevaOne font-semibold text-4xl mb-5 text-blue">
+            My Skills
+          </p>
           <LineGradient width="w-[200px]" />
         </motion.div>
         <motion.div
@@ -106,11 +108,11 @@ const MySkills = () => {
               <div
                 key={id}
                 className={
-                  "shadow-md hover:scale-105 duration-500 py-2 rounded-lg"
+                  "hover:scale-105 duration-500 py-2 rounded-md bg-light-pink text-blue hover:border-2 hover:border-red"
                 }
               >
                 <img src={src} alt="html" className="w-14 mx-auto" />
-                <p className="font-nanum text-xl mt-4">{title}</p>
+                <p className="font-JosefinSans text-l mt-4">{title}</p>
               </div>
             ))}
           </div>
@@ -125,16 +127,18 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="font-playfair font-semibold text-4xl my-6">About Me</p>
+          <p className="font-playfair font-semibold text-4xl my-6 font-YesevaOne text-blue">
+            About Me
+          </p>
           <LineGradient width="w-[200px]" />
-          <p className="mt-10 mb-7">
-            Hello Thanks for stopping by to check out my profile. I'm a graduate
-            of Le Wagon's Web Development program and hold a bachelor's degree
-            in International Business from Florida International University. My
-            financial background combined with technical skills gives me a
-            unique perspective and ability to solve problems. I'm excited to
-            apply my knowledge to real-world projects and collaborate with a
-            team to make a positive impact while continuously growing and
+          <p className="mt-10 mb-7 font-JosefinSans text-blue">
+            Hello 👋 Thanks for stopping by to check out my profile. I'm a
+            graduate of Le Wagon's Web Development program and hold a bachelor's
+            degree in International Business from Florida International
+            University. My financial background combined with technical skills
+            gives me a unique perspective and ability to solve problems. I'm
+            excited to apply my knowledge to real-world projects and collaborate
+            with a team to make a positive impact while continuously growing and
             learning.
           </p>
         </motion.div>

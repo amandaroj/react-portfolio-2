@@ -19,7 +19,7 @@ module.exports = {
           "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
 
         "gradient-rainblue":
-          "linear-gradient(90deg, #F4ACB7 14.53%, #c4cbd9 69.36%, #8992aa 117.73%)",
+          "linear-gradient(90deg, #f66a6b 14.53%, 69.36%, #2b2344 117.73%)",
       }),
       fontFamily: {
         JosefinSans: ["Josefin Sans", "sans-serif"],

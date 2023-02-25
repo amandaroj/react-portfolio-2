@@ -23,7 +23,7 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="app sm:bg-light-pink">
+    <div className="app bg-light-pink">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -38,7 +38,7 @@ function App() {
         )}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
-      <LineGradient />
+
       <div className="w-5/6 mx-auto md:h-full">
         <MySkills />
       </div>

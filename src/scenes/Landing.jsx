@@ -15,11 +15,11 @@ const Landing = ({ setSelectedPage }) => {
       {/* image section */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreens ? (
-          <div className="relative z-0 ml-20 before:absolute before:-top-8 before:-left-8  before:w-full before:max-w-[300px] md:before:max-w-[400px] before:h-full before:border-2 before:bg-red before:border-red before:z-[-1]">
+          <div className="relative z-0 ml-20 before:absolute before:-top-8 before:-left-8  before:w-full before:max-w-[300px] md:before:max-w-[400px] before:h-full before:border-2 before:bg-red before:hover:bg-light-pink before:border-red before:z-[-1] before:rounded-md">
             <img
               alt="profile"
               src={profileImage}
-              className=" hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[350px]"
+              className=" hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[350px] rounded-md"
             />
           </div>
         ) : (
@@ -27,7 +27,7 @@ const Landing = ({ setSelectedPage }) => {
             alt="profile"
             src={profileImage}
             className="transition duration-500 z-10 w-full
-        max-w-[300px] md:max-w-[400px]"
+        max-w-[300px] md:max-w-[400px] rounded-md"
           />
         )}
       </div>
@@ -67,8 +67,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-red text-white rounded-sm py-3 px-7 font-JosefinSans
-            hover:bg-blue hover:text-deep-blue transition duration-500"
+            className="bg-red text-white hover:border-2 hover:border-red hover:text-blue py-3 px-7 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >

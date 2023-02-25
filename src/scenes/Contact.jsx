@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="contact py-48 ">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -33,7 +33,7 @@ const Contact = () => {
         className="flex justify-end w-full"
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">Contact Me</p>
+          <p className="font-YesevaOne font-semibold text-4xl">Contact Me</p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-1/2" />
           </div>
@@ -41,7 +41,7 @@ const Contact = () => {
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="md:flex md:justify-between gap-16 mt-5">
+      <div className="md:flex md:justify-between gap-16 mt-5 ">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -72,11 +72,12 @@ const Contact = () => {
             onSubmit={onSubmit}
             action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
             method="POST"
+            className="bg-light-pink border-2 border-red p-10 rounded-md font-JosefinSans"
           >
             <input
-              className="w-full font-semibold placeholder-opaque-black p-3 rounded shadow-md border-2 border-red"
+              className="w-full font-semibold placeholder-opaque-black p-3 rounded shadow-md border-2 border-red "
               type="text"
-              placeholder="NAME"
+              placeholder="Name"
               {...register("name", {
                 required: true,
                 maxLength: 100,
@@ -90,9 +91,9 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full  font-semibold placeholder-opaque-black p-3 mt-5 rounded shadow-md border-2 border-red"
+              className="w-full font-semibold placeholder-opaque-black p-3 mt-5 rounded shadow-md border-2 border-red"
               type="text"
-              placeholder="EMAIL"
+              placeholder="Email"
               {...register("email", {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -126,10 +127,11 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 rounded shadow-md border-2 border-red"
+              className="p-4 font-bold text-light-pink mt-5 bg-red hover:bg-light-pink
+              hover:text-blue rounded shadow-md hover:border-2 hover:border-red hover:opacity-80"
               type="submit"
             >
-              SEND
+              Send
             </button>
           </form>
         </motion.div>
