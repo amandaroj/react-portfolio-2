@@ -10,16 +10,16 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10"
+      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10 "
     >
       {/* image section */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreens ? (
-          <div className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 before:rounded-t-[400px] before:w-full before:max-w-[300px] md:before:max-w-[400px] before:h-full before:border-2 before:border-red before:z-[-1]">
+          <div className="relative z-0 ml-20 before:absolute before:-top-8 before:-left-8  before:w-full before:max-w-[300px] md:before:max-w-[400px] before:h-full before:border-2 before:bg-red before:border-red before:z-[-1]">
             <img
               alt="profile"
               src={profileImage}
-              className="rounded-t-[400px] hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[400px]"
+              className=" hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[350px]"
             />
           </div>
         ) : (
@@ -27,7 +27,7 @@ const Landing = ({ setSelectedPage }) => {
             alt="profile"
             src={profileImage}
             className="transition duration-500 z-10 w-full
-        max-w-[300px] md:max-w-[400px] rounded-[100px]"
+        max-w-[300px] md:max-w-[400px]"
           />
         )}
       </div>
@@ -46,17 +46,10 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Amanda{" "}
-            <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20
-                xs:before:content-brush before:absolute before:-left-[25px]
-                before:-top-[70px] before:z-[-1] md:text-white"
-            >
-              Rojter
-            </span>
+          <p className="text-6xl font-YesevaOne z-10 text-center md:text-start text-blue">
+            Amanda Rojter
           </p>
-          <p className="mt-10 mb-7 text-2xl text-center md:text-start font-nanum ">
+          <p className="mt-10 mb-7 text-2xl text-center md:text-start font-JosefinSans text-blue ">
             Full-stack Developer
           </p>
         </motion.div>
@@ -74,21 +67,12 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-white rounded-sm py-3 px-7 font-semibold
+            className="bg-red text-white rounded-sm py-3 px-7 font-JosefinSans
             hover:bg-blue hover:text-deep-blue transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact Me
-          </AnchorLink>
-          <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
-          >
-            <div className="bg-white hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
-              Let's Connect
-            </div>
           </AnchorLink>
         </motion.div>
 

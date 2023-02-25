@@ -3,13 +3,18 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import menuIcon from "../assets/menu-icon.svg";
 import closeMenu from "../assets/close-icon.svg";
+import Logo from "../assets/logo.png";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
-      className={`${selectedPage === lowerCasePage ? "text-red" : ""}
-    hover:text-red transition duration-500`}
+      className={`${
+        selectedPage === lowerCasePage
+          ? "text-blue font-JosefinSans hover:text-red"
+          : ""
+      }
+    hover:text-white text-blue transition duration-500 font-JosefinSans`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -26,11 +31,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">AR</h4>
+        <h4 className="font-YesevaOne text-3xl font-bold flex justify-center items-center">
+          AR
+          <img src={Logo} alt="logo" className="h-16" />
+        </h4>
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
+          <div className="flex justify-between gap-16 text-sm font-semibold">
             <Link
               page="Home"
               selectedPage={selectedPage}

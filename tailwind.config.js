@@ -5,10 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "deep-blue": "#010026",
-        blue: "#2CBCE9",
-        red: "#e96268",
-        yellow: "#FDCC49",
+        blue: "#2b2344",
+        red: "#f66a6b",
+        "light-pink": "#fef0f0",
+        "lightest-pink": "#fef6f6",
         grey: "#ededed",
         "dark-grey": "#757575",
         "darkest-grey": "#3a3a3a",
@@ -22,9 +22,8 @@ module.exports = {
           "linear-gradient(90deg, #F4ACB7 14.53%, #c4cbd9 69.36%, #8992aa 117.73%)",
       }),
       fontFamily: {
-        playfair: ["Playfair Display", "serif"],
-        opensans: ["Open Sans", "sans-serif"],
-        nanum: ["Nanum Pen Script", "sans-serif"],
+        JosefinSans: ["Josefin Sans", "sans-serif"],
+        YesevaOne: ["Yeseva One", "cursive"],
       },
       content: {
         brush: "url('./assets/brush.png')",

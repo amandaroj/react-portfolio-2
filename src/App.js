@@ -3,6 +3,7 @@ import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
+import Contact from "./scenes/Contact";
 import { useEffect, useState } from "react";
 import LineGradient from "./Components/LineGradient";
 import useMediaQuery from "./hooks/useMediaQuery";
@@ -22,7 +23,7 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="app">
+    <div className="app sm:bg-light-pink">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -41,9 +42,13 @@ function App() {
       <div className="w-5/6 mx-auto md:h-full">
         <MySkills />
       </div>
-      <linearGradient />
+      <LineGradient />
       <div className="w-5/6 mx-auto">
         <Projects />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto">
+        <Contact />
       </div>
     </div>
   );
