@@ -19,7 +19,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-bg-darkest-grey z-30 flex flex-col justify-center items-center text-center text-white p-16 rounded-lg shadow-md`;
+bg-blue z-30 flex flex-col justify-center items-center text-center text-white p-16 rounded-lg shadow-md `;
 
 const Projects = () => {
   return (
@@ -37,14 +37,14 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
-            <span className="text-red">PRO</span>JECTS
+          <p className="font-YesevaOne font-semibold text-4xl">
+            <span className="text-red">Pro</span>jects
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10 font-nanum text-xl">
+        <p className="mt-10 mb-10 font-nanum text-l font-JosefinSans">
           Hover over for more info!
         </p>
       </motion.div>
@@ -60,10 +60,7 @@ const Projects = () => {
         >
           {/* ROW 1 */}
 
-          <motion.div
-            variants={projectVariant}
-            className="relative rounded-lg shadow-md"
-          >
+          <motion.div variants={projectVariant} className="relative rounded-lg">
             <div className={overlayStyles}>
               <p className="text-2xl font-playfair">Food Visualizer</p>
               <p className="mt-7">This is my app</p>
@@ -72,7 +69,7 @@ const Projects = () => {
           </motion.div>
           <motion.div
             variants={projectVariant}
-            className="relative rounded-lg shadow-md"
+            className="relative rounded-lg  bg-light-pink"
           >
             <div className={overlayStyles}>
               <p className="text-2xl font-playfair">Food Visualizer</p>
@@ -82,7 +79,7 @@ const Projects = () => {
           </motion.div>
           <motion.div
             variants={projectVariant}
-            className="relative rounded-lg shadow-md"
+            className="relative rounded-lg  bg-light-pink"
           >
             <div className={overlayStyles}>
               <p className="text-2xl font-playfair">Food Visualizer</p>
@@ -92,7 +89,7 @@ const Projects = () => {
           </motion.div>
           <motion.div
             variants={projectVariant}
-            className="relative rounded-lg shadow-md"
+            className="relative rounded-lg "
           >
             <div className={overlayStyles}>
               <p className="text-2xl font-playfair">Food Visualizer</p>

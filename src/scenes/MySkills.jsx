@@ -90,7 +90,7 @@ const MySkills = () => {
           <p className="font-YesevaOne font-semibold text-4xl mb-5 text-blue">
             My Skills
           </p>
-          <LineGradient width="w-[200px]" />
+          <LineGradient width="w-[135px]" />
         </motion.div>
         <motion.div
           className="flex mt-5 justify-center md:justify-start"
@@ -108,7 +108,7 @@ const MySkills = () => {
               <div
                 key={id}
                 className={
-                  "hover:scale-105 duration-500 py-2 rounded-md bg-light-pink text-blue hover:border-2 hover:border-red"
+                  "hover:scale-105 duration-500 py-2 rounded-md bg-light-pink text-blue"
                 }
               >
                 <img src={src} alt="html" className="w-14 mx-auto" />
@@ -130,7 +130,7 @@ const MySkills = () => {
           <p className="font-playfair font-semibold text-4xl my-6 font-YesevaOne text-blue">
             About Me
           </p>
-          <LineGradient width="w-[200px]" />
+          <LineGradient width="w-[135px]" />
           <p className="mt-10 mb-7 font-JosefinSans text-blue">
             Hello 👋 Thanks for stopping by to check out my profile. I'm a
             graduate of Le Wagon's Web Development program and hold a bachelor's

@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         blue: "#2b2344",
         red: "#f66a6b",
+        pink: "#fac5c5",
         "light-pink": "#fef0f0",
         "lightest-pink": "#fef6f6",
         grey: "#ededed",
@@ -16,10 +17,10 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
-          "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
+          "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #b9aed6 78.07%)",
 
         "gradient-rainblue":
-          "linear-gradient(90deg, #f66a6b 14.53%, 69.36%, #2b2344 117.73%)",
+          "linear-gradient(90deg, #f9b3b3 14.53%, #fac6c6 69.36%, #9686c1 117.73%)",
       }),
       fontFamily: {
         JosefinSans: ["Josefin Sans", "sans-serif"],

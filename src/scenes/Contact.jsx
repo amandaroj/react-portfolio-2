@@ -33,9 +33,9 @@ const Contact = () => {
         className="flex justify-end w-full"
       >
         <div>
-          <p className="font-YesevaOne font-semibold text-4xl">Contact Me</p>
+          <p className="font-YesevaOne font-semibold text-4xl">Let's Connect</p>
           <div className="flex md:justify-end my-5">
-            <LineGradient width="w-1/2" />
+            <LineGradient width="w-3/4" />
           </div>
         </div>
       </motion.div>
@@ -70,12 +70,12 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
+            action="https://formsubmit.co/rojteramanda@gmail.com"
             method="POST"
-            className="bg-light-pink border-2 border-red p-10 rounded-md font-JosefinSans"
+            className="bg-light-pink p-10 rounded-md font-JosefinSans"
           >
             <input
-              className="w-full font-semibold placeholder-opaque-black p-3 rounded shadow-md border-2 border-red "
+              className="w-full font-semibold placeholder-opaque-black p-3 rounded border-2 border-red focus:outline-none focus:ring focus:ring-pink"
               type="text"
               placeholder="Name"
               {...register("name", {
@@ -91,7 +91,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full font-semibold placeholder-opaque-black p-3 mt-5 rounded shadow-md border-2 border-red"
+              className="w-full font-semibold placeholder-opaque-black p-3 mt-5 rounded shadow-md border-2 border-red focus:outline-none focus:ring focus:ring-pink"
               type="text"
               placeholder="Email"
               {...register("email", {
@@ -107,7 +107,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full  font-semibold placeholder-opaque-black p-3 mt-5 rounded shadow-md border-2 border-red"
+              className="w-full  font-semibold placeholder-opaque-black p-3 mt-5 rounded shadow-md border-2 border-red focus:outline-none focus:ring focus:ring-pink"
               name="message"
               placeholder="Message"
               rows="4"
@@ -128,7 +128,7 @@ const Contact = () => {
 
             <button
               className="p-4 font-bold text-light-pink mt-5 bg-red hover:bg-light-pink
-              hover:text-blue rounded shadow-md hover:border-2 hover:border-red hover:opacity-80"
+              hover:text-blue rounded hover:border-2 hover:border-red hover:opacity-80"
               type="submit"
             >
               Send
