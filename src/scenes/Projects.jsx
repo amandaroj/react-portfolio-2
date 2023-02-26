@@ -50,7 +50,8 @@ const Projects = () => {
       {/* PROJECTS */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-2 sm:h-3/4 sm:w-3/4 gap-5"
+          className="sm:grid sm:grid-cols-2 sm:max-h-3/4 gap-5 sm:max-w-3/4
+                     "
           variants={container}
           initial="hidden"
           whileInView="visible"
@@ -69,10 +70,20 @@ const Projects = () => {
               </p>
               <div className="mb-10 mt-4">
                 <button className="sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
-                  <a href="https://github.com/amandaroj/FoodVisualizer">Code</a>
+                  <a
+                    href="https://github.com/amandaroj/FoodVisualizer"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Code
+                  </a>
                 </button>
                 <button className="sm:ml-20 ml-5 sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
-                  <a href="https://github.com/amandaroj/FoodVisualizer">
+                  <a
+                    href="http://www.foodvisualizer.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     View Live
                   </a>
                 </button>
@@ -95,16 +106,31 @@ const Projects = () => {
               </p>
               <div className="mb-10 sm:mt-10 ">
                 <button className="sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
-                  <a href="https://github.com/amandaroj/calculator-app">Code</a>
+                  <a
+                    href="https://github.com/amandaroj/calculator-app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Code
+                  </a>
                 </button>
                 <button className="sm:ml-20 ml-5 sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
-                  <a href="https://amandaroj.github.io/calculator-app/">
+                  <a
+                    href="https://amandaroj.github.io/calculator-app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     View Live
                   </a>
                 </button>
               </div>
             </div>
-            <img src={Calculator} alt="food visualizer" />
+            <img
+              src={Calculator}
+              alt="Calculator app"
+              height="600px"
+              width="600px"
+            />
           </motion.div>
           <motion.div
             variants={projectVariant}
@@ -122,18 +148,31 @@ const Projects = () => {
               </p>
               <div className="mb-10 sm:mt-10 ">
                 <button className="sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
-                  <a href="https://github.com/amandaroj/quote-generator">
+                  <a
+                    href="https://github.com/amandaroj/quote-generator"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Code
                   </a>
                 </button>
                 <button className="sm:ml-20 ml-5 sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
-                  <a href="https://amandaroj.github.io/quote-generator/">
+                  <a
+                    href="https://amandaroj.github.io/quote-generator/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     View Live
                   </a>
                 </button>
               </div>
             </div>
-            <img src={QuoteGenerator} alt="Quote Generator" />
+            <img
+              src={QuoteGenerator}
+              alt="Quote Generator"
+              height="600px"
+              width="600px"
+            />
           </motion.div>
           <motion.div variants={projectVariant} className="relative">
             <div className={overlayStyles}>
@@ -146,10 +185,20 @@ const Projects = () => {
               </p>
               <div className="mb-10 sm:mt-8 ">
                 <button className="sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
-                  <a href="https://camper-rental.herokuapp.com/">Code</a>
+                  <a
+                    href="https://github.com/EvaHaverkort/camper-rental"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Code
+                  </a>
                 </button>
                 <button className="sm:ml-20 ml-5 sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
-                  <a href="https://github.com/EvaHaverkort/camper-rental">
+                  <a
+                    href="https://camper-rental.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     View Live
                   </a>
                 </button>
