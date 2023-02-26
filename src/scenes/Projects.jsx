@@ -60,16 +60,31 @@ const Projects = () => {
         >
           {/* ROW 1 */}
 
-          <motion.div variants={projectVariant} className="relative rounded-lg">
+          <motion.div variants={projectVariant} className="relative">
             <div className={overlayStyles}>
-              <p className="text-2xl font-playfair">Food Visualizer</p>
-              <p className="mt-7">This is my app</p>
+              <p className="text-2xl font-YesevaOne">Food Visualizer</p>
+              <p className="mt-7 font-JosefinSans">
+                A web app designed and developed using Ruby on Rails that allows
+                guests to view pictures of the menu items before ordering by
+                scanning a QR code, and provides statistics on dish performance
+                for owners.
+              </p>
+              <div className="flex">
+                <button className="sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue py-3 px-7 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
+                  <a href="https://github.com/amandaroj/FoodVisualizer">Code</a>
+                </button>
+                <button className="sm:ml-20 sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue py-3 px-7 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
+                  <a href="https://github.com/amandaroj/FoodVisualizer">
+                    View Live
+                  </a>
+                </button>
+              </div>
             </div>
             <img src={FoodVisualizer} alt="food visualizer" />
           </motion.div>
           <motion.div
             variants={projectVariant}
-            className="relative rounded-lg  bg-light-pink"
+            className="relative bg-light-pink"
           >
             <div className={overlayStyles}>
               <p className="text-2xl font-playfair">Food Visualizer</p>
@@ -79,7 +94,7 @@ const Projects = () => {
           </motion.div>
           <motion.div
             variants={projectVariant}
-            className="relative rounded-lg  bg-light-pink"
+            className="relative bg-light-pink"
           >
             <div className={overlayStyles}>
               <p className="text-2xl font-playfair">Food Visualizer</p>
@@ -87,10 +102,7 @@ const Projects = () => {
             </div>
             <img src={QuoteGenerator} alt="food visualizer" />
           </motion.div>
-          <motion.div
-            variants={projectVariant}
-            className="relative rounded-lg "
-          >
+          <motion.div variants={projectVariant} className="relative">
             <div className={overlayStyles}>
               <p className="text-2xl font-playfair">Food Visualizer</p>
               <p className="mt-7">This is my app</p>
