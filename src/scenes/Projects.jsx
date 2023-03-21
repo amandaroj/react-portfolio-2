@@ -194,7 +194,7 @@ const Projects = () => {
                 </button>
                 <button className="sm:ml-20 ml-5 sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
                   <a
-                    href="https://camper-rental.herokuapp.com/"
+                    href="https://camperrental.herokuapp.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
