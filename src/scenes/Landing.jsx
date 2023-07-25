@@ -50,7 +50,7 @@ const Landing = ({ setSelectedPage }) => {
             Amanda Rojter
           </p>
           <p className="mt-10 mb-7 text-2xl text-center md:text-start font-JosefinSans text-blue ">
-            Full-stack Developer
+            Data Analyst
           </p>
         </motion.div>
 

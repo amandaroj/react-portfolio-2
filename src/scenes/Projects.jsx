@@ -4,6 +4,7 @@ import FoodVisualizer from "../assets/food-visualizer.gif";
 import CamperRental from "../assets/camper-rental.gif";
 import Calculator from "../assets/calculator.png";
 import QuoteGenerator from "../assets/quote-generator.png";
+import CovidDashboard from "../assets/CovidDashboard.png";
 
 const container = {
   hidden: {},
@@ -96,17 +97,20 @@ const Projects = () => {
           >
             <div className={overlayStyles}>
               <p className="text-xl md:text-2xl font-YesevaOne mt-10">
-                Simple Calculator
+                COVID-19 Population Analysis Dashboard
               </p>
               <p className="mt-7 font-JosefinSans">
-                A simple calculator application built entirely with JavaScript.
-                This calculator is designed to perform all basic arithmetic
-                operations depending upon the user input.
+                a data project utilizing SQL and Tableau to analyze COVID-19
+                deaths among different populations. The project integrates
+                various datasets to provide valuable insights into the impact of
+                the pandemic on specific demographics, regions, and age groups,
+                presenting the findings in an interactive and visually engaging
+                Tableau dashboard.
               </p>
               <div className="mb-10 sm:mt-10 ">
                 <button className="sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
                   <a
-                    href="https://github.com/amandaroj/calculator-app"
+                    href="https://github.com/amandaroj/PortfolioProjects/blob/main/CovidAnalysis.sql"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -115,7 +119,7 @@ const Projects = () => {
                 </button>
                 <button className="sm:ml-20 ml-5 sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
                   <a
-                    href="https://amandaroj.github.io/calculator-app/"
+                    href="https://public.tableau.com/views/COVID-19PopulationAnalysisDashboard/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -125,7 +129,7 @@ const Projects = () => {
               </div>
             </div>
             <img
-              src={Calculator}
+              src={CovidDashboard}
               alt="Calculator app"
               height="600px"
               width="600px"

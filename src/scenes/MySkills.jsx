@@ -12,9 +12,26 @@ import Tailwind from "../assets/tailwind.png";
 import Git from "../assets/git.png";
 import Figma from "../assets/figma.png";
 import Sql from "../assets/sql.png";
+import Tableau from "../assets/tableau.png";
+import Excel from "../assets/Excel.png";
 
 const MySkills = () => {
   const technologies = [
+    {
+      id: 1,
+      src: Excel,
+      title: "Excel",
+    },
+    {
+      id: 1,
+      src: Sql,
+      title: "SQL",
+    },
+    {
+      id: 1,
+      src: Tableau,
+      title: "Tableau",
+    },
     {
       id: 1,
       src: html,
@@ -29,11 +46,6 @@ const MySkills = () => {
       id: 1,
       src: Javascript,
       title: "Javascript",
-    },
-    {
-      id: 1,
-      src: React,
-      title: "React",
     },
     {
       id: 1,
@@ -52,23 +64,8 @@ const MySkills = () => {
     },
     {
       id: 1,
-      src: Tailwind,
-      title: "Tailwind",
-    },
-    {
-      id: 1,
       src: Git,
       title: "Git",
-    },
-    {
-      id: 1,
-      src: Figma,
-      title: "Figma",
-    },
-    {
-      id: 1,
-      src: Sql,
-      title: "SQL",
     },
   ];
 
@@ -132,14 +129,20 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-[135px]" />
           <p className="mt-10 mb-7 font-JosefinSans text-blue">
-            Hello 👋 Thanks for stopping by to check out my profile. I'm a
-            graduate of Le Wagon's Web Development program and hold a bachelor's
+            Hello 👋 Thanks for stopping by! I'm a graduate of Le Wagon's Web
+            Development program and a certificate holder of Coursera/Google's
+            Data Analytics with a strong passion for data analysis and
+            visualization. Combining my technical skills with a bachelor's
             degree in International Business from Florida International
-            University. My financial background combined with technical skills
-            gives me a unique perspective and ability to solve problems. I'm
-            excited to apply my knowledge to real-world projects and collaborate
-            with a team to make a positive impact while continuously growing and
-            learning.
+            University, I bring a unique perspective to problem-solving. I
+            thrive on applying data manipulation, statistical analysis, and
+            data-driven decision-making to real-world projects, collaborating
+            with teams to make a positive impact. Continuously growing and
+            learning, I'm dedicated to expanding my data visualization abilities
+            to present insights effectively. As a data analyst, I'm committed to
+            contributing to informed business decisions and leveraging my
+            expertise to drive growth and efficiency. Let's connect and explore
+            exciting opportunities in the world of data analysis!
           </p>
         </motion.div>
       </div>
