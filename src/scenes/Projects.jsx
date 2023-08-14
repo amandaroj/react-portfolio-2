@@ -2,9 +2,8 @@ import LineGradient from "../Components/LineGradient";
 import { motion } from "framer-motion";
 import FoodVisualizer from "../assets/food-visualizer.gif";
 import CamperRental from "../assets/camper-rental.gif";
-import Calculator from "../assets/calculator.png";
-import QuoteGenerator from "../assets/quote-generator.png";
-import CovidDashboard from "../assets/CovidDashboard.png";
+import CoffeeSales from "../assets/coffeesales.png";
+import SpRealEstate from "../assets/sprealestate.png";
 
 const container = {
   hidden: {},
@@ -75,7 +74,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Code
+                    Github
                   </a>
                 </button>
                 <button className="sm:ml-20 ml-5 sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
@@ -97,39 +96,38 @@ const Projects = () => {
           >
             <div className={overlayStyles}>
               <p className="text-xl md:text-2xl font-YesevaOne mt-10">
-                COVID-19 Population Analysis Dashboard
+                Real Estate Analysis Dashboard
               </p>
               <p className="mt-7 font-JosefinSans">
-                a data project utilizing SQL and Tableau to analyze COVID-19
-                deaths among different populations. The project integrates
-                various datasets to provide valuable insights into the impact of
-                the pandemic on specific demographics, regions, and age groups,
-                presenting the findings in an interactive and visually engaging
-                Tableau dashboard.
+                Created a Real Estate Analysis of São Paulo's apartment market,
+                utilizing SQL and Tableau to dissect a dataset of 13,000 units.
+                The interactive Tableau dashboard showcases district-wise
+                pricing trends, amenity influences, and room distributions,
+                enabling informed decisions for potential buyers and renters.
               </p>
               <div className="mb-10 sm:mt-10 ">
                 <button className="sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
                   <a
-                    href="https://github.com/amandaroj/PortfolioProjects/blob/main/CovidAnalysis.sql"
+                    href="https://github.com/amandaroj/RealEstateAnalysis#real-estate-analysis-of-apartments-in-s%C3%A3o-paulo-brazil"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Code
+                    Github
                   </a>
                 </button>
                 <button className="sm:ml-20 ml-5 sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
                   <a
-                    href="https://public.tableau.com/views/COVID-19PopulationAnalysisDashboard/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"
+                    href="https://public.tableau.com/app/profile/amanda.rojter/viz/SoPauloBrazilRealEstateAnalysis/SaoPauloRealEstateAnalysis"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    View Live
+                    Dashboard
                   </a>
                 </button>
               </div>
             </div>
             <img
-              src={CovidDashboard}
+              src={SpRealEstate}
               alt="Calculator app"
               height="600px"
               width="600px"
@@ -141,37 +139,28 @@ const Projects = () => {
           >
             <div className={overlayStyles}>
               <p className="text-xl sm:text-2xl font-YesevaOne mt-10">
-                Quote Generator
+                Excel Coffee Sales Dashboard
               </p>
               <p className="mt-7 font-JosefinSans">
-                Built with JavaScript, this app fetches a random quote from an
-                API and displays it in the browser upon clicking a button. It
-                also has the added functionality of sharing the quote to
-                Twitter.
+                A dynamic dashboard featuring pivot tables and interactive
+                charts. Users can explore total sales over time, sales by
+                country, and identify the top 5 customers based on coffee size,
+                loyalty card usage, and roast type.
               </p>
               <div className="mb-10 sm:mt-10 ">
                 <button className="sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
                   <a
-                    href="https://github.com/amandaroj/quote-generator"
+                    href="https://github.com/amandaroj/CoffeeSalesDashboard"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Code
-                  </a>
-                </button>
-                <button className="sm:ml-20 ml-5 sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
-                  <a
-                    href="https://amandaroj.github.io/quote-generator/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    View Live
+                    Github
                   </a>
                 </button>
               </div>
             </div>
             <img
-              src={QuoteGenerator}
+              src={CoffeeSales}
               alt="Quote Generator"
               height="600px"
               width="600px"
@@ -193,7 +182,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Code
+                    Github
                   </a>
                 </button>
                 <button className="sm:ml-20 ml-5 sm:mt-20 bg-red text-white hover:border-2 hover:border-red hover:text-blue sm:py-3 sm:px-7 py-2 px-4 font-JosefinSans hover:bg-light-pink hover:text-deep-blue transition duration-500 rounded-md">
