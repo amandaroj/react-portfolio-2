@@ -47,7 +47,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-YesevaOne z-10 text-center md:text-start text-blue">
-            Amanda Rojter
+            Amanda
           </p>
           <p className="mt-10 mb-7 text-2xl text-center md:text-start font-JosefinSans text-blue ">
             Aspiring Business/Data Analyst
